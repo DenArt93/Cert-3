@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="org.example.testDemoQa.DemoQaTest" time="39.995" tests="3" errors="3" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="22"/>
+    <property name="webdriver.chrome.driver" value="/Users/admin/.cache/selenium/chromedriver/mac64/126.0.6478.126/chromedriver"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/admin/IdeaProjects/Cert-3/target/test-classes:/Users/admin/IdeaProjects/Cert-3/target/classes:/Users/admin/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/Users/admin/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/Users/admin/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/Users/admin/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/admin/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/admin/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/admin/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/Users/admin/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/Users/admin/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/Users/admin/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/Users/admin/.m2/repository/ch/qos/logback/logback-classic/1.5.6/logback-classic-1.5.6.jar:/Users/admin/.m2/repository/ch/qos/logback/logback-core/1.5.6/logback-core-1.5.6.jar:/Users/admin/.m2/repository/org/slf4j/slf4j-api/2.0.13/slf4j-api-2.0.13.jar:/Users/admin/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/Users/admin/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/admin/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/Users/admin/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-java/4.21.0/selenium-java-4.21.0.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-api/4.21.0/selenium-api-4.21.0.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.21.0/selenium-chrome-driver-4.21.0.jar:/Users/admin/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.21.0/selenium-chromium-driver-4.21.0.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-json/4.21.0/selenium-json-4.21.0.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.21.0/selenium-manager-4.21.0.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v123/4.21.0/selenium-devtools-v123-4.21.0.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v124/4.21.0/selenium-devtools-v124-4.21.0.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v125/4.21.0/selenium-devtools-v125-4.21.0.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.21.0/selenium-devtools-v85-4.21.0.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.21.0/selenium-edge-driver-4.21.0.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.21.0/selenium-firefox-driver-4.21.0.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-http/4.21.0/selenium-http-4.21.0.jar:/Users/admin/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.21.0/selenium-ie-driver-4.21.0.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.21.0/selenium-remote-driver-4.21.0.jar:/Users/admin/.m2/repository/com/google/guava/guava/33.2.0-jre/guava-33.2.0-jre.jar:/Users/admin/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/Users/admin/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/admin/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/admin/.m2/repository/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar:/Users/admin/.m2/repository/com/google/errorprone/error_prone_annotations/2.26.1/error_prone_annotations-2.26.1.jar:/Users/admin/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/admin/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.25.0-alpha/opentelemetry-semconv-1.25.0-alpha.jar:/Users/admin/.m2/repository/io/opentelemetry/opentelemetry-api/1.38.0/opentelemetry-api-1.38.0.jar:/Users/admin/.m2/repository/io/opentelemetry/opentelemetry-context/1.38.0/opentelemetry-context-1.38.0.jar:/Users/admin/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.38.0/opentelemetry-exporter-logging-1.38.0.jar:/Users/admin/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.38.0/opentelemetry-sdk-common-1.38.0.jar:/Users/admin/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.38.0/opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar:/Users/admin/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.38.0/opentelemetry-sdk-extension-autoconfigure-1.38.0.jar:/Users/admin/.m2/repository/io/opentelemetry/opentelemetry-api-incubator/1.38.0-alpha/opentelemetry-api-incubator-1.38.0-alpha.jar:/Users/admin/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.38.0/opentelemetry-sdk-trace-1.38.0.jar:/Users/admin/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.38.0/opentelemetry-sdk-1.38.0.jar:/Users/admin/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.38.0/opentelemetry-sdk-metrics-1.38.0.jar:/Users/admin/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.38.0/opentelemetry-sdk-logs-1.38.0.jar:/Users/admin/.m2/repository/net/bytebuddy/byte-buddy/1.14.15/byte-buddy-1.14.15.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-os/4.21.0/selenium-os-4.21.0.jar:/Users/admin/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.21.0/selenium-safari-driver-4.21.0.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-support/4.21.0/selenium-support-4.21.0.jar:/Users/admin/.m2/repository/io/github/bonigarcia/webdrivermanager/5.8.0/webdrivermanager-5.8.0.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/admin/.m2/repository/com/github/docker-java/docker-java/3.3.6/docker-java-3.3.6.jar:/Users/admin/.m2/repository/com/github/docker-java/docker-java-core/3.3.6/docker-java-core-3.3.6.jar:/Users/admin/.m2/repository/com/github/docker-java/docker-java-api/3.3.6/docker-java-api-3.3.6.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/admin/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.76/bcpkix-jdk18on-1.76.jar:/Users/admin/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.76/bcprov-jdk18on-1.76.jar:/Users/admin/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.76/bcutil-jdk18on-1.76.jar:/Users/admin/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/admin/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.6/docker-java-transport-httpclient5-3.3.6.jar:/Users/admin/.m2/repository/com/github/docker-java/docker-java-transport/3.3.6/docker-java-transport-3.3.6.jar:/Users/admin/.m2/repository/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar:/Users/admin/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/admin/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/Users/admin/.m2/repository/org/apache/commons/commons-compress/1.26.1/commons-compress-1.26.1.jar:/Users/admin/.m2/repository/commons-io/commons-io/2.15.1/commons-io-2.15.1.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Yekaterinburg"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="22"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.boot.library.path" value="/Users/admin/Library/Java/JavaVirtualMachines/openjdk-22.0.1/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/admin/IdeaProjects/Cert-3/target/surefire/surefirebooter-20240627132225123_3.jar /Users/admin/IdeaProjects/Cert-3/target/surefire 2024-06-27T13-22-25_023-jvmRun1 surefire-20240627132225123_1tmp surefire_0-20240627132225123_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/admin/IdeaProjects/Cert-3/target/test-classes:/Users/admin/IdeaProjects/Cert-3/target/classes:/Users/admin/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/Users/admin/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/Users/admin/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/Users/admin/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/admin/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/admin/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/admin/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/Users/admin/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/Users/admin/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/Users/admin/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/Users/admin/.m2/repository/ch/qos/logback/logback-classic/1.5.6/logback-classic-1.5.6.jar:/Users/admin/.m2/repository/ch/qos/logback/logback-core/1.5.6/logback-core-1.5.6.jar:/Users/admin/.m2/repository/org/slf4j/slf4j-api/2.0.13/slf4j-api-2.0.13.jar:/Users/admin/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/Users/admin/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/admin/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/Users/admin/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-java/4.21.0/selenium-java-4.21.0.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-api/4.21.0/selenium-api-4.21.0.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.21.0/selenium-chrome-driver-4.21.0.jar:/Users/admin/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.21.0/selenium-chromium-driver-4.21.0.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-json/4.21.0/selenium-json-4.21.0.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.21.0/selenium-manager-4.21.0.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v123/4.21.0/selenium-devtools-v123-4.21.0.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v124/4.21.0/selenium-devtools-v124-4.21.0.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v125/4.21.0/selenium-devtools-v125-4.21.0.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.21.0/selenium-devtools-v85-4.21.0.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.21.0/selenium-edge-driver-4.21.0.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.21.0/selenium-firefox-driver-4.21.0.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-http/4.21.0/selenium-http-4.21.0.jar:/Users/admin/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.21.0/selenium-ie-driver-4.21.0.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.21.0/selenium-remote-driver-4.21.0.jar:/Users/admin/.m2/repository/com/google/guava/guava/33.2.0-jre/guava-33.2.0-jre.jar:/Users/admin/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/Users/admin/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/admin/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/admin/.m2/repository/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar:/Users/admin/.m2/repository/com/google/errorprone/error_prone_annotations/2.26.1/error_prone_annotations-2.26.1.jar:/Users/admin/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/admin/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.25.0-alpha/opentelemetry-semconv-1.25.0-alpha.jar:/Users/admin/.m2/repository/io/opentelemetry/opentelemetry-api/1.38.0/opentelemetry-api-1.38.0.jar:/Users/admin/.m2/repository/io/opentelemetry/opentelemetry-context/1.38.0/opentelemetry-context-1.38.0.jar:/Users/admin/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.38.0/opentelemetry-exporter-logging-1.38.0.jar:/Users/admin/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.38.0/opentelemetry-sdk-common-1.38.0.jar:/Users/admin/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.38.0/opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar:/Users/admin/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.38.0/opentelemetry-sdk-extension-autoconfigure-1.38.0.jar:/Users/admin/.m2/repository/io/opentelemetry/opentelemetry-api-incubator/1.38.0-alpha/opentelemetry-api-incubator-1.38.0-alpha.jar:/Users/admin/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.38.0/opentelemetry-sdk-trace-1.38.0.jar:/Users/admin/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.38.0/opentelemetry-sdk-1.38.0.jar:/Users/admin/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.38.0/opentelemetry-sdk-metrics-1.38.0.jar:/Users/admin/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.38.0/opentelemetry-sdk-logs-1.38.0.jar:/Users/admin/.m2/repository/net/bytebuddy/byte-buddy/1.14.15/byte-buddy-1.14.15.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-os/4.21.0/selenium-os-4.21.0.jar:/Users/admin/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.21.0/selenium-safari-driver-4.21.0.jar:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-support/4.21.0/selenium-support-4.21.0.jar:/Users/admin/.m2/repository/io/github/bonigarcia/webdrivermanager/5.8.0/webdrivermanager-5.8.0.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/admin/.m2/repository/com/github/docker-java/docker-java/3.3.6/docker-java-3.3.6.jar:/Users/admin/.m2/repository/com/github/docker-java/docker-java-core/3.3.6/docker-java-core-3.3.6.jar:/Users/admin/.m2/repository/com/github/docker-java/docker-java-api/3.3.6/docker-java-api-3.3.6.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/admin/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.76/bcpkix-jdk18on-1.76.jar:/Users/admin/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.76/bcprov-jdk18on-1.76.jar:/Users/admin/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.76/bcutil-jdk18on-1.76.jar:/Users/admin/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/admin/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.6/docker-java-transport-httpclient5-3.3.6.jar:/Users/admin/.m2/repository/com/github/docker-java/docker-java-transport/3.3.6/docker-java-transport-3.3.6.jar:/Users/admin/.m2/repository/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar:/Users/admin/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/admin/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/Users/admin/.m2/repository/org/apache/commons/commons-compress/1.26.1/commons-compress-1.26.1.jar:/Users/admin/.m2/repository/commons-io/commons-io/2.15.1/commons-io-2.15.1.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/admin"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="/Users/admin/Library/Java/JavaVirtualMachines/openjdk-22.0.1/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/admin/IdeaProjects/Cert-3"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/admin/IdeaProjects/Cert-3/target/surefire/surefirebooter-20240627132225123_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="22.0.1+8-16"/>
+    <property name="user.name" value="admin"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="14.5"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/admin/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/4w/z17sf_dj43nbrppnbf3hgb800000gn/T/"/>
+    <property name="idea.version" value="2024.1.1"/>
+    <property name="java.version" value="22.0.1"/>
+    <property name="user.dir" value="/Users/admin/IdeaProjects/Cert-3"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/admin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="22.0.1+8-16"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="66.0"/>
+  </properties>
+  <testcase name="testAddBook" classname="org.example.testDemoQa.DemoQaTest" time="15.121">
+    <error message="timeout: Timed out receiving message from renderer: 9.738&#10;  (Session info: chrome=126.0.6478.127)&#10;Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;22.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [16e9dadd718a9ffbb4474e0a17159bd5, get {url=https://demoqa.com/login}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: /var/folders/4w/z17sf_dj43n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51851}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51851/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 16e9dadd718a9ffbb4474e0a17159bd5" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+timeout: Timed out receiving message from renderer: 9.738
+  (Session info: chrome=126.0.6478.127)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.5', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [16e9dadd718a9ffbb4474e0a17159bd5, get {url=https://demoqa.com/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: /var/folders/4w/z17sf_dj43n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51851}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51851/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 16e9dadd718a9ffbb4474e0a17159bd5
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at org.example.testDemoQa.LoginPage.<init>(LoginPage.java:20)
+	at org.example.core.BaseSeleniumTest.login(BaseSeleniumTest.java:29)
+	at org.example.testDemoQa.DemoQaTest.testAddBook(DemoQaTest.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></error>
+    <system-out><![CDATA[13:22:26.686 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {s}->https://demoqa.com:443
+13:22:26.698 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to demoqa.com:443
+13:22:27.096 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+13:22:27.096 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+13:22:27.097 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication -- Target auth state: UNCHALLENGED
+13:22:27.097 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+13:22:27.097 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+13:22:27.097 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: POST /Account/v1/GenerateToken HTTP/1.1
+13:22:27.097 [main] DEBUG org.apache.http.wire --  >> "POST /Account/v1/GenerateToken HTTP/1.1[\r][\n]"
+13:22:27.098 [main] DEBUG org.apache.http.wire --  >> "Accept: */*[\r][\n]"
+13:22:27.098 [main] DEBUG org.apache.http.wire --  >> "Content-Type: application/json[\r][\n]"
+13:22:27.098 [main] DEBUG org.apache.http.wire --  >> "Content-Length: 52[\r][\n]"
+13:22:27.098 [main] DEBUG org.apache.http.wire --  >> "Host: demoqa.com[\r][\n]"
+13:22:27.098 [main] DEBUG org.apache.http.wire --  >> "Connection: Keep-Alive[\r][\n]"
+13:22:27.098 [main] DEBUG org.apache.http.wire --  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/22.0.1)[\r][\n]"
+13:22:27.098 [main] DEBUG org.apache.http.wire --  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+13:22:27.098 [main] DEBUG org.apache.http.wire --  >> "[\r][\n]"
+13:22:27.098 [main] DEBUG org.apache.http.headers -- >> POST /Account/v1/GenerateToken HTTP/1.1
+13:22:27.098 [main] DEBUG org.apache.http.headers -- >> Accept: */*
+13:22:27.099 [main] DEBUG org.apache.http.headers -- >> Content-Type: application/json
+13:22:27.099 [main] DEBUG org.apache.http.headers -- >> Content-Length: 52
+13:22:27.099 [main] DEBUG org.apache.http.headers -- >> Host: demoqa.com
+13:22:27.099 [main] DEBUG org.apache.http.headers -- >> Connection: Keep-Alive
+13:22:27.099 [main] DEBUG org.apache.http.headers -- >> User-Agent: Apache-HttpClient/4.5.13 (Java/22.0.1)
+13:22:27.099 [main] DEBUG org.apache.http.headers -- >> Accept-Encoding: gzip,deflate
+13:22:27.099 [main] DEBUG org.apache.http.wire --  >> "{"password":"Gosling1!","userName":"RyanGosling123"}"
+13:22:27.694 [main] DEBUG org.apache.http.wire --  << "HTTP/1.1 200 OK[\r][\n]"
+13:22:27.695 [main] DEBUG org.apache.http.wire --  << "Server: nginx/1.17.10 (Ubuntu)[\r][\n]"
+13:22:27.695 [main] DEBUG org.apache.http.wire --  << "Date: Thu, 27 Jun 2024 08:22:27 GMT[\r][\n]"
+13:22:27.695 [main] DEBUG org.apache.http.wire --  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+13:22:27.695 [main] DEBUG org.apache.http.wire --  << "Content-Length: 282[\r][\n]"
+13:22:27.695 [main] DEBUG org.apache.http.wire --  << "Connection: keep-alive[\r][\n]"
+13:22:27.696 [main] DEBUG org.apache.http.wire --  << "X-Powered-By: Express[\r][\n]"
+13:22:27.696 [main] DEBUG org.apache.http.wire --  << "ETag: W/"11a-krqqFQU903dyXsNKMrytDT+FBQY"[\r][\n]"
+13:22:27.696 [main] DEBUG org.apache.http.wire --  << "[\r][\n]"
+13:22:27.696 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 200 OK
+13:22:27.696 [main] DEBUG org.apache.http.headers -- << HTTP/1.1 200 OK
+13:22:27.697 [main] DEBUG org.apache.http.headers -- << Server: nginx/1.17.10 (Ubuntu)
+13:22:27.697 [main] DEBUG org.apache.http.headers -- << Date: Thu, 27 Jun 2024 08:22:27 GMT
+13:22:27.697 [main] DEBUG org.apache.http.headers -- << Content-Type: application/json; charset=utf-8
+13:22:27.697 [main] DEBUG org.apache.http.headers -- << Content-Length: 282
+13:22:27.697 [main] DEBUG org.apache.http.headers -- << Connection: keep-alive
+13:22:27.697 [main] DEBUG org.apache.http.headers -- << X-Powered-By: Express
+13:22:27.697 [main] DEBUG org.apache.http.headers -- << ETag: W/"11a-krqqFQU903dyXsNKMrytDT+FBQY"
+13:22:27.700 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive indefinitely
+13:22:27.706 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json; charset=utf-8
+13:22:27.706 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+13:22:27.733 [main] DEBUG org.apache.http.wire --  << "{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IlJ5YW5Hb3NsaW5nMTIzIiwicGFzc3dvcmQiOiJHb3NsaW5nMSEiLCJpYXQiOjE3MTk0NzY1NDd9.NmVkrYqnR-wpvmeFWizqfXcIhHvAPNM4KW2V2xdn1rI","expires":"2024-07-04T08:22:27.185Z","status":"Success","result":"User authorized successfully."}"
+13:22:27.733 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2ba5aa7a
+13:22:27.734 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive indefinitely
+13:22:27.756 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {s}->https://demoqa.com:443
+13:22:27.756 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to demoqa.com:443
+13:22:27.915 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+13:22:27.915 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+13:22:27.915 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+13:22:27.915 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+13:22:27.915 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: POST /BookStore/v1/Books HTTP/1.1
+13:22:27.915 [main] DEBUG org.apache.http.wire --  >> "POST /BookStore/v1/Books HTTP/1.1[\r][\n]"
+13:22:27.915 [main] DEBUG org.apache.http.wire --  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IlJ5YW5Hb3NsaW5nMTIzIiwicGFzc3dvcmQiOiJHb3NsaW5nMSEiLCJpYXQiOjE3MTk0NzY1NDd9.NmVkrYqnR-wpvmeFWizqfXcIhHvAPNM4KW2V2xdn1rI[\r][\n]"
+13:22:27.915 [main] DEBUG org.apache.http.wire --  >> "Accept: */*[\r][\n]"
+13:22:27.915 [main] DEBUG org.apache.http.wire --  >> "Content-Type: application/json[\r][\n]"
+13:22:27.915 [main] DEBUG org.apache.http.wire --  >> "Content-Length: 363[\r][\n]"
+13:22:27.916 [main] DEBUG org.apache.http.wire --  >> "Host: demoqa.com[\r][\n]"
+13:22:27.916 [main] DEBUG org.apache.http.wire --  >> "Connection: Keep-Alive[\r][\n]"
+13:22:27.916 [main] DEBUG org.apache.http.wire --  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/22.0.1)[\r][\n]"
+13:22:27.916 [main] DEBUG org.apache.http.wire --  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+13:22:27.916 [main] DEBUG org.apache.http.wire --  >> "[\r][\n]"
+13:22:27.916 [main] DEBUG org.apache.http.headers -- >> POST /BookStore/v1/Books HTTP/1.1
+13:22:27.916 [main] DEBUG org.apache.http.headers -- >> Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IlJ5YW5Hb3NsaW5nMTIzIiwicGFzc3dvcmQiOiJHb3NsaW5nMSEiLCJpYXQiOjE3MTk0NzY1NDd9.NmVkrYqnR-wpvmeFWizqfXcIhHvAPNM4KW2V2xdn1rI
+13:22:27.916 [main] DEBUG org.apache.http.headers -- >> Accept: */*
+13:22:27.916 [main] DEBUG org.apache.http.headers -- >> Content-Type: application/json
+13:22:27.916 [main] DEBUG org.apache.http.headers -- >> Content-Length: 363
+13:22:27.916 [main] DEBUG org.apache.http.headers -- >> Host: demoqa.com
+13:22:27.916 [main] DEBUG org.apache.http.headers -- >> Connection: Keep-Alive
+13:22:27.916 [main] DEBUG org.apache.http.headers -- >> User-Agent: Apache-HttpClient/4.5.13 (Java/22.0.1)
+13:22:27.917 [main] DEBUG org.apache.http.headers -- >> Accept-Encoding: gzip,deflate
+13:22:27.917 [main] DEBUG org.apache.http.wire --  >> "{[\r][\n]"
+13:22:27.917 [main] DEBUG org.apache.http.wire --  >> "  "userId": "4ff834c7-8d0e-4b0d-9d16-1dca4afbe6ae",[\r][\n]"
+13:22:27.917 [main] DEBUG org.apache.http.wire --  >> "  "collectionOfIsbns": [[\r][\n]"
+13:22:27.917 [main] DEBUG org.apache.http.wire --  >> "    {[\r][\n]"
+13:22:27.917 [main] DEBUG org.apache.http.wire --  >> "      "isbn": "9781449325862"[\r][\n]"
+13:22:27.917 [main] DEBUG org.apache.http.wire --  >> "    },[\r][\n]"
+13:22:27.917 [main] DEBUG org.apache.http.wire --  >> "    {[\r][\n]"
+13:22:27.917 [main] DEBUG org.apache.http.wire --  >> "      "isbn": "9781449331818"[\r][\n]"
+13:22:27.917 [main] DEBUG org.apache.http.wire --  >> "    },[\r][\n]"
+13:22:27.917 [main] DEBUG org.apache.http.wire --  >> "    {[\r][\n]"
+13:22:27.917 [main] DEBUG org.apache.http.wire --  >> "      "isbn": "9781449337711"[\r][\n]"
+13:22:27.917 [main] DEBUG org.apache.http.wire --  >> "    },[\r][\n]"
+13:22:27.917 [main] DEBUG org.apache.http.wire --  >> "    {[\r][\n]"
+13:22:27.917 [main] DEBUG org.apache.http.wire --  >> "      "isbn": "9781449365035"[\r][\n]"
+13:22:27.917 [main] DEBUG org.apache.http.wire --  >> "    },[\r][\n]"
+13:22:27.917 [main] DEBUG org.apache.http.wire --  >> "    {[\r][\n]"
+13:22:27.917 [main] DEBUG org.apache.http.wire --  >> "      "isbn": "9781491904244"[\r][\n]"
+13:22:27.917 [main] DEBUG org.apache.http.wire --  >> "    },[\r][\n]"
+13:22:27.918 [main] DEBUG org.apache.http.wire --  >> "    {[\r][\n]"
+13:22:27.918 [main] DEBUG org.apache.http.wire --  >> "      "isbn": "9781491950296"[\r][\n]"
+13:22:27.918 [main] DEBUG org.apache.http.wire --  >> "    }[\r][\n]"
+13:22:27.918 [main] DEBUG org.apache.http.wire --  >> "  ][\r][\n]"
+13:22:27.918 [main] DEBUG org.apache.http.wire --  >> "}"
+13:22:28.052 [main] DEBUG org.apache.http.wire --  << "HTTP/1.1 201 Created[\r][\n]"
+13:22:28.052 [main] DEBUG org.apache.http.wire --  << "Server: nginx/1.17.10 (Ubuntu)[\r][\n]"
+13:22:28.052 [main] DEBUG org.apache.http.wire --  << "Date: Thu, 27 Jun 2024 08:22:28 GMT[\r][\n]"
+13:22:28.052 [main] DEBUG org.apache.http.wire --  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+13:22:28.053 [main] DEBUG org.apache.http.wire --  << "Content-Length: 161[\r][\n]"
+13:22:28.053 [main] DEBUG org.apache.http.wire --  << "Connection: keep-alive[\r][\n]"
+13:22:28.053 [main] DEBUG org.apache.http.wire --  << "X-Powered-By: Express[\r][\n]"
+13:22:28.053 [main] DEBUG org.apache.http.wire --  << "ETag: W/"a1-XMsZ5dLxDfuj7yADwdLwIqQjZ2Q"[\r][\n]"
+13:22:28.053 [main] DEBUG org.apache.http.wire --  << "[\r][\n]"
+13:22:28.053 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 201 Created
+13:22:28.053 [main] DEBUG org.apache.http.headers -- << HTTP/1.1 201 Created
+13:22:28.053 [main] DEBUG org.apache.http.headers -- << Server: nginx/1.17.10 (Ubuntu)
+13:22:28.053 [main] DEBUG org.apache.http.headers -- << Date: Thu, 27 Jun 2024 08:22:28 GMT
+13:22:28.053 [main] DEBUG org.apache.http.headers -- << Content-Type: application/json; charset=utf-8
+13:22:28.053 [main] DEBUG org.apache.http.headers -- << Content-Length: 161
+13:22:28.053 [main] DEBUG org.apache.http.headers -- << Connection: keep-alive
+13:22:28.053 [main] DEBUG org.apache.http.headers -- << X-Powered-By: Express
+13:22:28.053 [main] DEBUG org.apache.http.headers -- << ETag: W/"a1-XMsZ5dLxDfuj7yADwdLwIqQjZ2Q"
+13:22:28.053 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive indefinitely
+13:22:28.054 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json; charset=utf-8
+13:22:28.054 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+13:22:28.066 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+13:22:28.325 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 14:11:56 27/06/2024 YEKT)
+13:22:28.326 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 00:46:15 28/06/2024 YEKT)
+13:22:28.327 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+13:22:28.338 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
+13:22:28.339 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as /Users/admin/.cache/selenium/chromedriver/mac64/126.0.6478.126/chromedriver
+]]></system-out>
+    <system-err><![CDATA[июн. 27, 2024 1:22:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
+]]></system-err>
+  </testcase>
+  <testcase name="authorization" classname="org.example.testDemoQa.DemoQaTest" time="11.705">
+    <error message="timeout: Timed out receiving message from renderer: 9.749&#10;  (Session info: chrome=126.0.6478.127)&#10;Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;22.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [8bca20afc2fe0cac9965e355b7078c50, get {url=https://demoqa.com/login}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: /var/folders/4w/z17sf_dj43n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51883}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51883/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8bca20afc2fe0cac9965e355b7078c50" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+timeout: Timed out receiving message from renderer: 9.749
+  (Session info: chrome=126.0.6478.127)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.5', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8bca20afc2fe0cac9965e355b7078c50, get {url=https://demoqa.com/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: /var/folders/4w/z17sf_dj43n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51883}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51883/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8bca20afc2fe0cac9965e355b7078c50
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at org.example.testDemoQa.LoginPage.<init>(LoginPage.java:20)
+	at org.example.core.BaseSeleniumTest.login(BaseSeleniumTest.java:29)
+	at org.example.testDemoQa.DemoQaTest.authorization(DemoQaTest.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></error>
+    <system-out><![CDATA[13:22:40.798 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+13:22:40.806 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 14:11:56 27/06/2024 YEKT)
+13:22:40.807 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 00:46:15 28/06/2024 YEKT)
+13:22:40.807 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+13:22:40.810 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
+13:22:40.811 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as /Users/admin/.cache/selenium/chromedriver/mac64/126.0.6478.126/chromedriver
+13:22:40.831 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:51844<->176.58.101.124:443 closed
+13:22:40.831 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:51845<->176.58.101.124:443 closed
+]]></system-out>
+    <system-err><![CDATA[июн. 27, 2024 1:22:41 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
+]]></system-err>
+  </testcase>
+  <testcase name="testAddBookAndDelete" classname="org.example.testDemoQa.DemoQaTest" time="13.147">
+    <error message="timeout: Timed out receiving message from renderer: 9.748&#10;  (Session info: chrome=126.0.6478.127)&#10;Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;22.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [cd11336c961d764207ae2e7a12cda274, get {url=https://demoqa.com/login}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: /var/folders/4w/z17sf_dj43n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51919}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51919/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: cd11336c961d764207ae2e7a12cda274" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+timeout: Timed out receiving message from renderer: 9.748
+  (Session info: chrome=126.0.6478.127)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.5', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cd11336c961d764207ae2e7a12cda274, get {url=https://demoqa.com/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: /var/folders/4w/z17sf_dj43n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51919}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51919/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cd11336c961d764207ae2e7a12cda274
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at org.example.testDemoQa.LoginPage.<init>(LoginPage.java:20)
+	at org.example.core.BaseSeleniumTest.login(BaseSeleniumTest.java:29)
+	at org.example.testDemoQa.DemoQaTest.testAddBookAndDelete(DemoQaTest.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></error>
+    <system-out><![CDATA[13:22:52.512 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {s}->https://demoqa.com:443
+13:22:52.512 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to demoqa.com:443
+13:22:52.668 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+13:22:52.669 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+13:22:52.669 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication -- Target auth state: UNCHALLENGED
+13:22:52.669 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+13:22:52.669 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+13:22:52.669 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: POST /Account/v1/GenerateToken HTTP/1.1
+13:22:52.669 [main] DEBUG org.apache.http.wire --  >> "POST /Account/v1/GenerateToken HTTP/1.1[\r][\n]"
+13:22:52.669 [main] DEBUG org.apache.http.wire --  >> "Accept: */*[\r][\n]"
+13:22:52.669 [main] DEBUG org.apache.http.wire --  >> "Content-Type: application/json[\r][\n]"
+13:22:52.669 [main] DEBUG org.apache.http.wire --  >> "Content-Length: 52[\r][\n]"
+13:22:52.669 [main] DEBUG org.apache.http.wire --  >> "Host: demoqa.com[\r][\n]"
+13:22:52.669 [main] DEBUG org.apache.http.wire --  >> "Connection: Keep-Alive[\r][\n]"
+13:22:52.669 [main] DEBUG org.apache.http.wire --  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/22.0.1)[\r][\n]"
+13:22:52.669 [main] DEBUG org.apache.http.wire --  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+13:22:52.670 [main] DEBUG org.apache.http.wire --  >> "[\r][\n]"
+13:22:52.670 [main] DEBUG org.apache.http.headers -- >> POST /Account/v1/GenerateToken HTTP/1.1
+13:22:52.670 [main] DEBUG org.apache.http.headers -- >> Accept: */*
+13:22:52.670 [main] DEBUG org.apache.http.headers -- >> Content-Type: application/json
+13:22:52.670 [main] DEBUG org.apache.http.headers -- >> Content-Length: 52
+13:22:52.670 [main] DEBUG org.apache.http.headers -- >> Host: demoqa.com
+13:22:52.670 [main] DEBUG org.apache.http.headers -- >> Connection: Keep-Alive
+13:22:52.670 [main] DEBUG org.apache.http.headers -- >> User-Agent: Apache-HttpClient/4.5.13 (Java/22.0.1)
+13:22:52.670 [main] DEBUG org.apache.http.headers -- >> Accept-Encoding: gzip,deflate
+13:22:52.670 [main] DEBUG org.apache.http.wire --  >> "{"password":"Gosling1!","userName":"RyanGosling123"}"
+13:22:53.396 [main] DEBUG org.apache.http.wire --  << "HTTP/1.1 200 OK[\r][\n]"
+13:22:53.396 [main] DEBUG org.apache.http.wire --  << "Server: nginx/1.17.10 (Ubuntu)[\r][\n]"
+13:22:53.396 [main] DEBUG org.apache.http.wire --  << "Date: Thu, 27 Jun 2024 08:22:53 GMT[\r][\n]"
+13:22:53.396 [main] DEBUG org.apache.http.wire --  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+13:22:53.396 [main] DEBUG org.apache.http.wire --  << "Content-Length: 85[\r][\n]"
+13:22:53.396 [main] DEBUG org.apache.http.wire --  << "Connection: keep-alive[\r][\n]"
+13:22:53.396 [main] DEBUG org.apache.http.wire --  << "X-Powered-By: Express[\r][\n]"
+13:22:53.397 [main] DEBUG org.apache.http.wire --  << "ETag: W/"55-uDqoBYBzbvMfwcbBiE9kdrLOtHY"[\r][\n]"
+13:22:53.397 [main] DEBUG org.apache.http.wire --  << "[\r][\n]"
+13:22:53.397 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 200 OK
+13:22:53.397 [main] DEBUG org.apache.http.headers -- << HTTP/1.1 200 OK
+13:22:53.397 [main] DEBUG org.apache.http.headers -- << Server: nginx/1.17.10 (Ubuntu)
+13:22:53.397 [main] DEBUG org.apache.http.headers -- << Date: Thu, 27 Jun 2024 08:22:53 GMT
+13:22:53.397 [main] DEBUG org.apache.http.headers -- << Content-Type: application/json; charset=utf-8
+13:22:53.397 [main] DEBUG org.apache.http.headers -- << Content-Length: 85
+13:22:53.397 [main] DEBUG org.apache.http.headers -- << Connection: keep-alive
+13:22:53.397 [main] DEBUG org.apache.http.headers -- << X-Powered-By: Express
+13:22:53.397 [main] DEBUG org.apache.http.headers -- << ETag: W/"55-uDqoBYBzbvMfwcbBiE9kdrLOtHY"
+13:22:53.397 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive indefinitely
+13:22:53.397 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json; charset=utf-8
+13:22:53.398 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+13:22:53.399 [main] DEBUG org.apache.http.wire --  << "{"token":null,"expires":null,"status":"Failed","result":"User authorization failed."}"
+13:22:53.399 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1e1237ab
+13:22:53.399 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive indefinitely
+13:22:53.408 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {s}->https://demoqa.com:443
+13:22:53.408 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to demoqa.com:443
+13:22:53.573 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+13:22:53.574 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+13:22:53.574 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+13:22:53.574 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+13:22:53.574 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: POST /BookStore/v1/Books HTTP/1.1
+13:22:53.574 [main] DEBUG org.apache.http.wire --  >> "POST /BookStore/v1/Books HTTP/1.1[\r][\n]"
+13:22:53.574 [main] DEBUG org.apache.http.wire --  >> "Authorization: Bearer null[\r][\n]"
+13:22:53.574 [main] DEBUG org.apache.http.wire --  >> "Accept: */*[\r][\n]"
+13:22:53.574 [main] DEBUG org.apache.http.wire --  >> "Content-Type: application/json[\r][\n]"
+13:22:53.574 [main] DEBUG org.apache.http.wire --  >> "Content-Length: 179[\r][\n]"
+13:22:53.574 [main] DEBUG org.apache.http.wire --  >> "Host: demoqa.com[\r][\n]"
+13:22:53.574 [main] DEBUG org.apache.http.wire --  >> "Connection: Keep-Alive[\r][\n]"
+13:22:53.574 [main] DEBUG org.apache.http.wire --  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/22.0.1)[\r][\n]"
+13:22:53.574 [main] DEBUG org.apache.http.wire --  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+13:22:53.575 [main] DEBUG org.apache.http.wire --  >> "[\r][\n]"
+13:22:53.575 [main] DEBUG org.apache.http.headers -- >> POST /BookStore/v1/Books HTTP/1.1
+13:22:53.575 [main] DEBUG org.apache.http.headers -- >> Authorization: Bearer null
+13:22:53.575 [main] DEBUG org.apache.http.headers -- >> Accept: */*
+13:22:53.575 [main] DEBUG org.apache.http.headers -- >> Content-Type: application/json
+13:22:53.575 [main] DEBUG org.apache.http.headers -- >> Content-Length: 179
+13:22:53.575 [main] DEBUG org.apache.http.headers -- >> Host: demoqa.com
+13:22:53.575 [main] DEBUG org.apache.http.headers -- >> Connection: Keep-Alive
+13:22:53.575 [main] DEBUG org.apache.http.headers -- >> User-Agent: Apache-HttpClient/4.5.13 (Java/22.0.1)
+13:22:53.575 [main] DEBUG org.apache.http.headers -- >> Accept-Encoding: gzip,deflate
+13:22:53.575 [main] DEBUG org.apache.http.wire --  >> "{[\r][\n]"
+13:22:53.575 [main] DEBUG org.apache.http.wire --  >> "  "userId": "4ff834c7-8d0e-4b0d-9d16-1dca4afbe6ae",[\r][\n]"
+13:22:53.575 [main] DEBUG org.apache.http.wire --  >> "  "collectionOfIsbns": [[\r][\n]"
+13:22:53.575 [main] DEBUG org.apache.http.wire --  >> "    {[\r][\n]"
+13:22:53.575 [main] DEBUG org.apache.http.wire --  >> "      "isbn": "9781449325862"[\r][\n]"
+13:22:53.575 [main] DEBUG org.apache.http.wire --  >> "    },[\r][\n]"
+13:22:53.575 [main] DEBUG org.apache.http.wire --  >> "    {[\r][\n]"
+13:22:53.575 [main] DEBUG org.apache.http.wire --  >> "      "isbn": "9781449331818"[\r][\n]"
+13:22:53.575 [main] DEBUG org.apache.http.wire --  >> "    }[\r][\n]"
+13:22:53.575 [main] DEBUG org.apache.http.wire --  >> "  ][\r][\n]"
+13:22:53.575 [main] DEBUG org.apache.http.wire --  >> "}"
+13:22:53.821 [main] DEBUG org.apache.http.wire --  << "HTTP/1.1 401 Unauthorized[\r][\n]"
+13:22:53.821 [main] DEBUG org.apache.http.wire --  << "Server: nginx/1.17.10 (Ubuntu)[\r][\n]"
+13:22:53.821 [main] DEBUG org.apache.http.wire --  << "Date: Thu, 27 Jun 2024 08:22:53 GMT[\r][\n]"
+13:22:53.822 [main] DEBUG org.apache.http.wire --  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+13:22:53.822 [main] DEBUG org.apache.http.wire --  << "Content-Length: 48[\r][\n]"
+13:22:53.822 [main] DEBUG org.apache.http.wire --  << "Connection: keep-alive[\r][\n]"
+13:22:53.822 [main] DEBUG org.apache.http.wire --  << "X-Powered-By: Express[\r][\n]"
+13:22:53.822 [main] DEBUG org.apache.http.wire --  << "ETag: W/"30-V67npMN18Zy3bnk1xW2xtLGgx8c"[\r][\n]"
+13:22:53.822 [main] DEBUG org.apache.http.wire --  << "[\r][\n]"
+13:22:53.822 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 401 Unauthorized
+13:22:53.822 [main] DEBUG org.apache.http.headers -- << HTTP/1.1 401 Unauthorized
+13:22:53.822 [main] DEBUG org.apache.http.headers -- << Server: nginx/1.17.10 (Ubuntu)
+13:22:53.822 [main] DEBUG org.apache.http.headers -- << Date: Thu, 27 Jun 2024 08:22:53 GMT
+13:22:53.822 [main] DEBUG org.apache.http.headers -- << Content-Type: application/json; charset=utf-8
+13:22:53.822 [main] DEBUG org.apache.http.headers -- << Content-Length: 48
+13:22:53.822 [main] DEBUG org.apache.http.headers -- << Connection: keep-alive
+13:22:53.822 [main] DEBUG org.apache.http.headers -- << X-Powered-By: Express
+13:22:53.822 [main] DEBUG org.apache.http.headers -- << ETag: W/"30-V67npMN18Zy3bnk1xW2xtLGgx8c"
+13:22:53.823 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive indefinitely
+13:22:53.823 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Authentication required
+13:22:53.823 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- demoqa.com:443 requested authentication
+13:22:53.823 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Response contains no authentication challenges
+13:22:53.823 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json; charset=utf-8
+13:22:53.823 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+13:22:53.824 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+13:22:53.831 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 14:11:56 27/06/2024 YEKT)
+13:22:53.831 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 00:46:15 28/06/2024 YEKT)
+13:22:53.831 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+13:22:53.835 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
+13:22:53.835 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as /Users/admin/.cache/selenium/chromedriver/mac64/126.0.6478.126/chromedriver
+]]></system-out>
+    <system-err><![CDATA[июн. 27, 2024 1:22:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
+]]></system-err>
+  </testcase>
+</testsuite>

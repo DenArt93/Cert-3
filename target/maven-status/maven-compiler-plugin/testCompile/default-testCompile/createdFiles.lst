@@ -1,0 +1,7 @@
+org/example/client/ApiClient.class
+org/example/testDemoQa/DemoQaTest.class
+org/example/core/BaseSeleniumPage.class
+org/example/config/ConfigProvider.class
+org/example/testDemoQa/LoginPage.class
+org/example/core/BaseSeleniumTest.class
+org/example/testDemoQa/BookPage.class
